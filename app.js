@@ -9,7 +9,7 @@ config({ path: "./config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL,"https://backend-gpbw.onrender.com/send/mail"],
+    origin: "*",
     methods: ["POST"],
     credentials: true,
   })
